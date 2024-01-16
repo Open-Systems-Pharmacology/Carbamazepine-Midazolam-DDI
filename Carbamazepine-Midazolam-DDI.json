@@ -1,38 +1,12 @@
 {
-  "Version": 78,
-  "Individuals": [
+  "Version": 79,
+  "ExpressionProfiles": [
     {
-      "Name": "Lutz2018",
-      "Seed": 122349843,
-      "OriginData": {
-        "CalculationMethods": [
-          "SurfaceAreaPlsInt_VAR1",
-          "Body surface area - Mosteller"
-        ],
-        "Species": "Human",
-        "Population": "MexicanAmericanWhite_NHANES_1997",
-        "Gender": "MALE",
-        "Age": {
-          "Value": 30.0,
-          "Unit": "year(s)"
-        }
-      },
+      "Type": "Enzyme",
+      "Species": "Human",
+      "Molecule": "CYP3A4",
+      "Category": "European (P-gp modified, CYP3A4 36 h)",
       "Parameters": [
-        {
-          "Path": "CYP2B6|Reference concentration",
-          "Value": 1.56,
-          "Unit": "µmol/l"
-        },
-        {
-          "Path": "CYP2B6|t1/2 (intestine)",
-          "Value": 23.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "CYP2B6|t1/2 (liver)",
-          "Value": 32.0,
-          "Unit": "h"
-        },
         {
           "Path": "CYP3A4|Reference concentration",
           "Value": 4.32,
@@ -52,6 +26,104 @@
           }
         },
         {
+          "Path": "Organism|Brain|Intracellular|CYP3A4|Relative expression",
+          "Value": 0.0041682898325
+        },
+        {
+          "Path": "Organism|Gonads|Intracellular|CYP3A4|Relative expression",
+          "Value": 0.00078691079081
+        },
+        {
+          "Path": "Organism|Kidney|Intracellular|CYP3A4|Relative expression",
+          "Value": 0.0053603428126
+        },
+        {
+          "Path": "Organism|Liver|Pericentral|Intracellular|CYP3A4|Relative expression",
+          "Value": 1.0
+        },
+        {
+          "Path": "Organism|Liver|Periportal|Intracellular|CYP3A4|Relative expression",
+          "Value": 1.0
+        },
+        {
+          "Path": "Organism|Lung|Intracellular|CYP3A4|Relative expression",
+          "Value": 0.00042695753798
+        },
+        {
+          "Path": "Organism|SmallIntestine|Intracellular|CYP3A4|Relative expression",
+          "Value": 0.0727697702
+        },
+        {
+          "Path": "Organism|SmallIntestine|Mucosa|Duodenum|Intracellular|CYP3A4|Relative expression",
+          "Value": 0.0727697702
+        },
+        {
+          "Path": "Organism|SmallIntestine|Mucosa|LowerIleum|Intracellular|CYP3A4|Relative expression",
+          "Value": 0.0727697702
+        },
+        {
+          "Path": "Organism|SmallIntestine|Mucosa|LowerJejunum|Intracellular|CYP3A4|Relative expression",
+          "Value": 0.0727697702
+        },
+        {
+          "Path": "Organism|SmallIntestine|Mucosa|UpperIleum|Intracellular|CYP3A4|Relative expression",
+          "Value": 0.0727697702
+        },
+        {
+          "Path": "Organism|SmallIntestine|Mucosa|UpperJejunum|Intracellular|CYP3A4|Relative expression",
+          "Value": 0.0727697702
+        }
+      ],
+      "Localization": "Intracellular, BloodCellsIntracellular, VascEndosome",
+      "Ontogeny": {
+        "Name": "CYP3A4"
+      }
+    },
+    {
+      "Type": "Enzyme",
+      "Species": "Human",
+      "Molecule": "UGT1A4",
+      "Category": "European (P-gp modified, CYP3A4 36 h)",
+      "Parameters": [
+        {
+          "Path": "Organism|Liver|Pericentral|Intracellular|UGT1A4|Relative expression",
+          "Value": 1.0
+        },
+        {
+          "Path": "Organism|Liver|Periportal|Intracellular|UGT1A4|Relative expression",
+          "Value": 1.0
+        },
+        {
+          "Path": "UGT1A4|Reference concentration",
+          "Value": 2.32,
+          "Unit": "µmol/l",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "UGT1A4|t1/2 (intestine)",
+          "Value": 23.0,
+          "Unit": "h"
+        },
+        {
+          "Path": "UGT1A4|t1/2 (liver)",
+          "Value": 36.0,
+          "Unit": "h"
+        }
+      ],
+      "Localization": "Intracellular, BloodCellsIntracellular, VascEndosome",
+      "Ontogeny": {
+        "Name": "UGT1A4"
+      }
+    },
+    {
+      "Type": "OtherProtein",
+      "Species": "Human",
+      "Molecule": "GABRG2",
+      "Category": "European (P-gp modified, CYP3A4 36 h)",
+      "Parameters": [
+        {
           "Path": "GABRG2|Reference concentration",
           "Value": 1.04099689,
           "Unit": "µmol/l",
@@ -70,36 +142,93 @@
           "Unit": "h"
         },
         {
-          "Path": "Organism|Brain|Intracellular|CYP2B6|Relative expression",
-          "Value": 0.0021211129296
-        },
-        {
-          "Path": "Organism|Brain|Intracellular|CYP3A4|Relative expression",
-          "Value": 0.0041682898325
-        },
-        {
           "Path": "Organism|Brain|Intracellular|GABRG2|Relative expression",
           "Value": 1.0
+        }
+      ],
+      "Localization": "Interstitial, BloodCellsMembrane, VascMembranePlasmaSide"
+    },
+    {
+      "Type": "Enzyme",
+      "Species": "Human",
+      "Molecule": "CYP2B6",
+      "Category": "European (P-gp modified, CYP3A4 36 h)",
+      "Parameters": [
+        {
+          "Path": "CYP2B6|Reference concentration",
+          "Value": 1.56,
+          "Unit": "µmol/l"
+        },
+        {
+          "Path": "CYP2B6|t1/2 (intestine)",
+          "Value": 23.0,
+          "Unit": "h"
+        },
+        {
+          "Path": "CYP2B6|t1/2 (liver)",
+          "Value": 32.0,
+          "Unit": "h"
+        },
+        {
+          "Path": "Organism|Brain|Intracellular|CYP2B6|Relative expression",
+          "Value": 0.0021211129296
         },
         {
           "Path": "Organism|Gonads|Intracellular|CYP2B6|Relative expression",
           "Value": 0.0063502454992
         },
         {
-          "Path": "Organism|Gonads|Intracellular|CYP3A4|Relative expression",
-          "Value": 0.00078691079081
-        },
-        {
-          "Path": "Organism|Gonads|Intracellular|UGT2B7|Relative expression",
-          "Value": 0.00094468085106
-        },
-        {
           "Path": "Organism|Kidney|Intracellular|CYP2B6|Relative expression",
           "Value": 0.1043535188
         },
         {
-          "Path": "Organism|Kidney|Intracellular|CYP3A4|Relative expression",
-          "Value": 0.0053603428126
+          "Path": "Organism|Liver|Pericentral|Intracellular|CYP2B6|Relative expression",
+          "Value": 1.0
+        },
+        {
+          "Path": "Organism|Liver|Periportal|Intracellular|CYP2B6|Relative expression",
+          "Value": 1.0
+        },
+        {
+          "Path": "Organism|Lung|Intracellular|CYP2B6|Relative expression",
+          "Value": 0.5970540098
+        },
+        {
+          "Path": "Organism|SmallIntestine|Intracellular|CYP2B6|Relative expression",
+          "Value": 0.0703109656
+        },
+        {
+          "Path": "Organism|SmallIntestine|Mucosa|Duodenum|Intracellular|CYP2B6|Relative expression",
+          "Value": 0.0703109656
+        },
+        {
+          "Path": "Organism|SmallIntestine|Mucosa|LowerIleum|Intracellular|CYP2B6|Relative expression",
+          "Value": 0.0703109656
+        },
+        {
+          "Path": "Organism|SmallIntestine|Mucosa|LowerJejunum|Intracellular|CYP2B6|Relative expression",
+          "Value": 0.0703109656
+        },
+        {
+          "Path": "Organism|SmallIntestine|Mucosa|UpperIleum|Intracellular|CYP2B6|Relative expression",
+          "Value": 0.0703109656
+        },
+        {
+          "Path": "Organism|SmallIntestine|Mucosa|UpperJejunum|Intracellular|CYP2B6|Relative expression",
+          "Value": 0.0703109656
+        }
+      ],
+      "Localization": "Intracellular, BloodCellsIntracellular, VascEndosome"
+    },
+    {
+      "Type": "Enzyme",
+      "Species": "Human",
+      "Molecule": "UGT2B7",
+      "Category": "European (P-gp modified, CYP3A4 36 h)",
+      "Parameters": [
+        {
+          "Path": "Organism|Gonads|Intracellular|UGT2B7|Relative expression",
+          "Value": 0.00094468085106
         },
         {
           "Path": "Organism|LargeIntestine|Intracellular|UGT2B7|Relative expression",
@@ -122,38 +251,7 @@
           "Value": 0.0049787234043
         },
         {
-          "Path": "Organism|Liver|EHC continuous fraction",
-          "Value": 1.0,
-          "ValueOrigin": {
-            "Source": "Unknown"
-          }
-        },
-        {
-          "Path": "Organism|Liver|Pericentral|Intracellular|CYP2B6|Relative expression",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Liver|Pericentral|Intracellular|CYP3A4|Relative expression",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Liver|Pericentral|Intracellular|UGT1A4|Relative expression",
-          "Value": 1.0
-        },
-        {
           "Path": "Organism|Liver|Pericentral|Intracellular|UGT2B7|Relative expression",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Liver|Periportal|Intracellular|CYP2B6|Relative expression",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Liver|Periportal|Intracellular|CYP3A4|Relative expression",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Liver|Periportal|Intracellular|UGT1A4|Relative expression",
           "Value": 1.0
         },
         {
@@ -161,106 +259,32 @@
           "Value": 1.0
         },
         {
-          "Path": "Organism|Lung|Intracellular|CYP2B6|Relative expression",
-          "Value": 0.5970540098
-        },
-        {
-          "Path": "Organism|Lung|Intracellular|CYP3A4|Relative expression",
-          "Value": 0.00042695753798
-        },
-        {
           "Path": "Organism|Pancreas|Intracellular|UGT2B7|Relative expression",
           "Value": 0.0354468085
-        },
-        {
-          "Path": "Organism|SmallIntestine|Intracellular|CYP2B6|Relative expression",
-          "Value": 0.0703109656
-        },
-        {
-          "Path": "Organism|SmallIntestine|Intracellular|CYP3A4|Relative expression",
-          "Value": 0.0727697702
         },
         {
           "Path": "Organism|SmallIntestine|Intracellular|UGT2B7|Relative expression",
           "Value": 0.5361702128
         },
         {
-          "Path": "Organism|SmallIntestine|Mucosa|Duodenum|Intracellular|CYP2B6|Relative expression",
-          "Value": 0.0703109656
-        },
-        {
-          "Path": "Organism|SmallIntestine|Mucosa|Duodenum|Intracellular|CYP3A4|Relative expression",
-          "Value": 0.0727697702
-        },
-        {
           "Path": "Organism|SmallIntestine|Mucosa|Duodenum|Intracellular|UGT2B7|Relative expression",
           "Value": 0.5361702128
-        },
-        {
-          "Path": "Organism|SmallIntestine|Mucosa|LowerIleum|Intracellular|CYP2B6|Relative expression",
-          "Value": 0.0703109656
-        },
-        {
-          "Path": "Organism|SmallIntestine|Mucosa|LowerIleum|Intracellular|CYP3A4|Relative expression",
-          "Value": 0.0727697702
         },
         {
           "Path": "Organism|SmallIntestine|Mucosa|LowerIleum|Intracellular|UGT2B7|Relative expression",
           "Value": 0.5361702128
         },
         {
-          "Path": "Organism|SmallIntestine|Mucosa|LowerJejunum|Intracellular|CYP2B6|Relative expression",
-          "Value": 0.0703109656
-        },
-        {
-          "Path": "Organism|SmallIntestine|Mucosa|LowerJejunum|Intracellular|CYP3A4|Relative expression",
-          "Value": 0.0727697702
-        },
-        {
           "Path": "Organism|SmallIntestine|Mucosa|LowerJejunum|Intracellular|UGT2B7|Relative expression",
           "Value": 0.5361702128
-        },
-        {
-          "Path": "Organism|SmallIntestine|Mucosa|UpperIleum|Intracellular|CYP2B6|Relative expression",
-          "Value": 0.0703109656
-        },
-        {
-          "Path": "Organism|SmallIntestine|Mucosa|UpperIleum|Intracellular|CYP3A4|Relative expression",
-          "Value": 0.0727697702
         },
         {
           "Path": "Organism|SmallIntestine|Mucosa|UpperIleum|Intracellular|UGT2B7|Relative expression",
           "Value": 0.5361702128
         },
         {
-          "Path": "Organism|SmallIntestine|Mucosa|UpperJejunum|Intracellular|CYP2B6|Relative expression",
-          "Value": 0.0703109656
-        },
-        {
-          "Path": "Organism|SmallIntestine|Mucosa|UpperJejunum|Intracellular|CYP3A4|Relative expression",
-          "Value": 0.0727697702
-        },
-        {
           "Path": "Organism|SmallIntestine|Mucosa|UpperJejunum|Intracellular|UGT2B7|Relative expression",
           "Value": 0.5361702128
-        },
-        {
-          "Path": "UGT1A4|Reference concentration",
-          "Value": 2.32,
-          "Unit": "µmol/l",
-          "ValueOrigin": {
-            "Source": "Unknown"
-          }
-        },
-        {
-          "Path": "UGT1A4|t1/2 (intestine)",
-          "Value": 23.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "UGT1A4|t1/2 (liver)",
-          "Value": 36.0,
-          "Unit": "h"
         },
         {
           "Path": "UGT2B7|Reference concentration",
@@ -273,50 +297,135 @@
         },
         {
           "Path": "UGT2B7|t1/2 (intestine)",
-          "Value": 23.0,
-          "Unit": "h"
+          "Value": 1380.0,
+          "Unit": "min"
         },
         {
           "Path": "UGT2B7|t1/2 (liver)",
-          "Value": 36.0,
-          "Unit": "h"
+          "Value": 2160.0,
+          "Unit": "min"
         }
       ],
-      "Molecules": [
-        {
-          "Name": "CYP3A4",
-          "Type": "Enzyme",
-          "Localization": "Intracellular, BloodCellsIntracellular, VascEndosome",
-          "Ontogeny": {
-            "Name": "CYP3A4"
-          }
+      "Localization": "Intracellular, BloodCellsIntracellular, VascEndosome",
+      "Ontogeny": {
+        "Name": "UGT2B7"
+      }
+    }
+  ],
+  "Individuals": [
+    {
+      "Name": "Kanefendt2023_Study1",
+      "Seed": 125126046,
+      "OriginData": {
+        "CalculationMethods": [
+          "SurfaceAreaPlsInt_VAR1",
+          "Body surface area - Mosteller"
+        ],
+        "Species": "Human",
+        "Population": "European_ICRP_2002",
+        "Gender": "MALE",
+        "Age": {
+          "Value": 46.1,
+          "Unit": "year(s)"
         },
-        {
-          "Name": "UGT1A4",
-          "Type": "Enzyme",
-          "Localization": "Intracellular, BloodCellsIntracellular, VascEndosome",
-          "Ontogeny": {
-            "Name": "UGT1A4"
-          }
+        "Weight": {
+          "Value": 75.17,
+          "Unit": "kg"
         },
+        "Height": {
+          "Value": 173.5,
+          "Unit": "cm"
+        }
+      },
+      "Parameters": [
         {
-          "Name": "GABRG2",
-          "Type": "OtherProtein",
-          "Localization": "Interstitial, BloodCellsMembrane, VascMembranePlasmaSide"
-        },
-        {
-          "Name": "CYP2B6",
-          "Type": "Enzyme",
-          "Localization": "Intracellular, BloodCellsIntracellular, VascEndosome"
-        },
-        {
-          "Name": "UGT2B7",
-          "Type": "Enzyme",
-          "Localization": "Intracellular",
-          "Ontogeny": {
-            "Name": "UGT2B7"
+          "Path": "Organism|Liver|EHC continuous fraction",
+          "Value": 1.0,
+          "ValueOrigin": {
+            "Source": "Unknown"
           }
         }
+      ],
+      "ExpressionProfiles": [
+        "CYP3A4|Human|European (P-gp modified, CYP3A4 36 h)",
+        "UGT1A4|Human|European (P-gp modified, CYP3A4 36 h)",
+        "CYP2B6|Human|European (P-gp modified, CYP3A4 36 h)",
+        "UGT2B7|Human|European (P-gp modified, CYP3A4 36 h)",
+        "GABRG2|Human|European (P-gp modified, CYP3A4 36 h)"
+      ]
+    },
+    {
+      "Name": "Kanefendt2023_Study2",
+      "Seed": 443762015,
+      "OriginData": {
+        "CalculationMethods": [
+          "SurfaceAreaPlsInt_VAR1",
+          "Body surface area - Mosteller"
+        ],
+        "Species": "Human",
+        "Population": "European_ICRP_2002",
+        "Gender": "MALE",
+        "Age": {
+          "Value": 32.8,
+          "Unit": "year(s)"
+        },
+        "Weight": {
+          "Value": 79.33,
+          "Unit": "kg"
+        },
+        "Height": {
+          "Value": 179.6,
+          "Unit": "cm"
+        }
+      },
+      "Parameters": [
+        {
+          "Path": "Organism|Liver|EHC continuous fraction",
+          "Value": 1.0,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "ExpressionProfiles": [
+        "CYP3A4|Human|European (P-gp modified, CYP3A4 36 h)",
+        "UGT1A4|Human|European (P-gp modified, CYP3A4 36 h)",
+        "CYP2B6|Human|European (P-gp modified, CYP3A4 36 h)",
+        "UGT2B7|Human|European (P-gp modified, CYP3A4 36 h)",
+        "GABRG2|Human|European (P-gp modified, CYP3A4 36 h)"
+      ]
+    },
+    {
+      "Name": "Lutz2018",
+      "Seed": 122349843,
+      "OriginData": {
+        "CalculationMethods": [
+          "SurfaceAreaPlsInt_VAR1",
+          "Body surface area - Mosteller"
+        ],
+        "Species": "Human",
+        "Population": "MexicanAmericanWhite_NHANES_1997",
+        "Gender": "MALE",
+        "Age": {
+          "Value": 30.0,
+          "Unit": "year(s)"
+        }
+      },
+      "Parameters": [
+        {
+          "Path": "Organism|Liver|EHC continuous fraction",
+          "Value": 1.0,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "ExpressionProfiles": [
+        "CYP3A4|Human|European (P-gp modified, CYP3A4 36 h)",
+        "UGT1A4|Human|European (P-gp modified, CYP3A4 36 h)",
+        "UGT2B7|Human|European (P-gp modified, CYP3A4 36 h)",
+        "CYP2B6|Human|European (P-gp modified, CYP3A4 36 h)",
+        "GABRG2|Human|European (P-gp modified, CYP3A4 36 h)"
       ]
     }
   ],
@@ -940,6 +1049,40 @@
           "Value": 1.0
         }
       ]
+    },
+    {
+      "Name": "CBZ_capsuleXR_fasted (Carbatrol)",
+      "FormulationType": "Formulation_Tablet_Weibull",
+      "Parameters": [
+        {
+          "Name": "Dissolution time (50% dissolved)",
+          "Value": 315.2431776804,
+          "Unit": "min",
+          "ValueOrigin": {
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from '004-2_from-003-1_XRtablet_fasted_solubility_FINAL' on 2022-03-24 12:41"
+          }
+        },
+        {
+          "Name": "Lag time",
+          "Value": 0.0,
+          "Unit": "min"
+        },
+        {
+          "Name": "Dissolution shape",
+          "Value": 1.2290186648,
+          "ValueOrigin": {
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from '004-2_from-003-1_XRtablet_fasted_solubility_FINAL' on 2022-03-24 12:41"
+          }
+        },
+        {
+          "Name": "Use as suspension",
+          "Value": 1.0
+        }
+      ]
     }
   ],
   "Protocols": [
@@ -1130,6 +1273,364 @@
       "TimeUnit": "h"
     },
     {
+      "Name": "Kanefendt2023_Study1_TreatmentPhase_Carbamazepine",
+      "DosingInterval": "Single",
+      "Schemas": [
+        {
+          "Name": "Schema 1",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 100.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 4.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 12.0,
+              "Unit": "h"
+            }
+          ]
+        },
+        {
+          "Name": "Schema 2",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 200.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 48.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 4.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 12.0,
+              "Unit": "h"
+            }
+          ]
+        },
+        {
+          "Name": "Schema 3",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 300.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 96.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 20.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 12.0,
+              "Unit": "h"
+            }
+          ]
+        },
+        {
+          "Name": "Schema 4",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 300.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 338.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 1.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 0.0,
+              "Unit": "h"
+            }
+          ]
+        },
+        {
+          "Name": "Schema 5",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 300.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 348.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 1.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 0.0,
+              "Unit": "h"
+            }
+          ]
+        },
+        {
+          "Name": "Schema 6",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 300.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 364.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 1.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 0.0,
+              "Unit": "h"
+            }
+          ]
+        },
+        {
+          "Name": "Schema 7",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 300.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 372.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 11.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 12.0,
+              "Unit": "h"
+            }
+          ]
+        }
+      ],
+      "TimeUnit": "h"
+    },
+    {
+      "Name": "Kanefendt2023_Study1_TreatmentPhase_Midazolam",
+      "DosingInterval": "Single",
+      "Schemas": [
+        {
+          "Name": "Schema 1",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 1.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 334.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 1.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 0.0,
+              "Unit": "h"
+            }
+          ]
+        }
+      ],
+      "TimeUnit": "h"
+    },
+    {
       "Name": "Lutz2018_ControlPhase_Midazolam",
       "DosingInterval": "Single",
       "Schemas": [
@@ -1178,9 +1679,2659 @@
         }
       ],
       "TimeUnit": "h"
+    },
+    {
+      "Name": "Kanefendt2023_Study1_ControlPhase_Midazolam",
+      "DosingInterval": "Single",
+      "Schemas": [
+        {
+          "Name": "Schema 1",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 1.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 1.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 0.0,
+              "Unit": "h"
+            }
+          ]
+        }
+      ],
+      "TimeUnit": "h"
+    },
+    {
+      "Name": "Kanefendt2023_Study2_TreatmentPhase_Carbamazepine",
+      "DosingInterval": "Single",
+      "Schemas": [
+        {
+          "Name": "Schema 1",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 100.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 4.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 12.0,
+              "Unit": "h"
+            }
+          ]
+        },
+        {
+          "Name": "Schema 2",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 200.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 48.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 4.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 12.0,
+              "Unit": "h"
+            }
+          ]
+        },
+        {
+          "Name": "Schema 3",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 300.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 96.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 20.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 12.0,
+              "Unit": "h"
+            }
+          ]
+        },
+        {
+          "Name": "Schema 4",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 300.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 340.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 1.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 0.0,
+              "Unit": "h"
+            }
+          ]
+        },
+        {
+          "Name": "Schema 5",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 300.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 348.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 1.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 0.0,
+              "Unit": "h"
+            }
+          ]
+        },
+        {
+          "Name": "Schema 6",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 300.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 364.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 1.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 0.0,
+              "Unit": "h"
+            }
+          ]
+        },
+        {
+          "Name": "Schema 7",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 300.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 372.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 5.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 12.0,
+              "Unit": "h"
+            }
+          ]
+        }
+      ],
+      "TimeUnit": "h"
+    },
+    {
+      "Name": "Kanefendt2023_Study2_ControlPhase_Midazolam",
+      "DosingInterval": "Single",
+      "Schemas": [
+        {
+          "Name": "Schema 1",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 1.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 1.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 0.0,
+              "Unit": "h"
+            }
+          ]
+        }
+      ],
+      "TimeUnit": "h"
+    },
+    {
+      "Name": "Kanefendt2023_Study2_TreatmentPhase_Midazolam",
+      "DosingInterval": "Single",
+      "Schemas": [
+        {
+          "Name": "Schema 1",
+          "SchemaItems": [
+            {
+              "Name": "Schema Item 1",
+              "ApplicationType": "Oral",
+              "FormulationKey": "Formulation",
+              "Parameters": [
+                {
+                  "Name": "Start time",
+                  "Value": 0.0,
+                  "Unit": "h"
+                },
+                {
+                  "Name": "InputDose",
+                  "Value": 1.0,
+                  "Unit": "mg"
+                },
+                {
+                  "Name": "Volume of water/body weight",
+                  "Value": 3.5,
+                  "Unit": "ml/kg"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 336.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "NumberOfRepetitions",
+              "Value": 1.0
+            },
+            {
+              "Name": "TimeBetweenRepetitions",
+              "Value": 0.0,
+              "Unit": "h"
+            }
+          ]
+        }
+      ],
+      "TimeUnit": "h"
     }
   ],
   "Simulations": [
+    {
+      "Name": "Kanefendt2023_Study1_ControlPhase",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Kanefendt 2023 - Study 1, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=14)"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 24.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Kanefendt2023_Study1_ControlPhase_Midazolam|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Midazolam|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Kanefendt2023_Study1_ControlPhase|Organism|PeripheralVenousBlood|Midazolam|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Kanefendt 2023 - Study 1, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=14)"
+        }
+      ],
+      "Individual": "Kanefendt2023_Study1",
+      "Compounds": [
+        {
+          "Name": "Midazolam",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "FaSSIF",
+              "GroupName": "COMPOUND_SOLUBILITY"
+            },
+            {
+              "AlternativeName": "Optimized",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "CYP3A4-Optimized",
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "Name": "UGT1A4-Optimized",
+              "MoleculeName": "UGT1A4"
+            },
+            {
+              "MoleculeName": "CYP2B6"
+            },
+            {
+              "MoleculeName": "UGT2B7"
+            },
+            {
+              "Name": "Glomerular Filtration-Optimized",
+              "SystemicProcessType": "GFR"
+            },
+            {
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "MoleculeName": "UGT1A4"
+            },
+            {
+              "MoleculeName": "CYP2B6"
+            },
+            {
+              "MoleculeName": "UGT2B7"
+            },
+            {
+              "Name": "GABRG2-Buhr 1997",
+              "MoleculeName": "GABRG2"
+            }
+          ],
+          "Protocol": {
+            "Name": "Kanefendt2023_Study1_ControlPhase_Midazolam",
+            "Formulations": [
+              {
+                "Name": "Solution",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Midazolam-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Kanefendt2023_Study1_ControlPhase|Organism|PeripheralVenousBlood|Midazolam|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Kanefendt 2023 - Study 1, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=14)-Midazolam-Peripheral Venous Blood-Plasma-GeometricMean",
+              "X": "Kanefendt 2023 - Study 1, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=14)|Time",
+              "Y": "Kanefendt 2023 - Study 1, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=14)|ObservedData|Peripheral Venous Blood|Plasma|Midazolam|GeometricMean",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Carbamazepine-Midazolam-DDI_OSP-GitHub\nKanefendt2023_Study1_ControlPhase\n2024-01-15 19:24"
+        }
+      ]
+    },
+    {
+      "Name": "Kanefendt2023_Study1_TreatmentPhase",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Kanefendt 2023 - Study 1, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=14)",
+        "Kanefendt 2023 - Study 1, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=14)"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 8.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 334.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 334.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "End time",
+              "Value": 336.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 336.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "End time",
+              "Value": 358.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_11|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_12|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_13|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_14|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_15|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_16|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_17|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_18|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_19|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_20|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_21|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_22|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_23|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_24|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_25|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_26|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_27|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_28|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_29|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_30|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_31|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_32|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_33|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_34|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_35|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_36|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_37|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_38|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_39|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_40|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_41|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_42|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Midazolam|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Midazolam|Plasma (Peripheral Venous Blood)",
+        "Organism|PeripheralVenousBlood|Carbamazepine|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Kanefendt2023_Study1_TreatmentPhase|Organism|PeripheralVenousBlood|Carbamazepine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Kanefendt 2023 - Study 1, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=14)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Kanefendt2023_Study1_TreatmentPhase|Organism|PeripheralVenousBlood|Midazolam|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Kanefendt 2023 - Study 1, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=14)"
+        }
+      ],
+      "Individual": "Kanefendt2023_Study1",
+      "Compounds": [
+        {
+          "Name": "Midazolam",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "FaSSIF",
+              "GroupName": "COMPOUND_SOLUBILITY"
+            },
+            {
+              "AlternativeName": "Optimized",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "CYP3A4-Optimized",
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "Name": "UGT1A4-Optimized",
+              "MoleculeName": "UGT1A4"
+            },
+            {
+              "MoleculeName": "CYP2B6"
+            },
+            {
+              "MoleculeName": "UGT2B7"
+            },
+            {
+              "Name": "Glomerular Filtration-Optimized",
+              "SystemicProcessType": "GFR"
+            },
+            {
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "MoleculeName": "UGT1A4"
+            },
+            {
+              "MoleculeName": "CYP2B6"
+            },
+            {
+              "MoleculeName": "UGT2B7"
+            },
+            {
+              "Name": "GABRG2-Buhr 1997",
+              "MoleculeName": "GABRG2"
+            }
+          ],
+          "Protocol": {
+            "Name": "Kanefendt2023_Study1_TreatmentPhase_Midazolam",
+            "Formulations": [
+              {
+                "Name": "Solution",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        },
+        {
+          "Name": "Carbamazepine",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "XR tablet (fitted)",
+              "GroupName": "COMPOUND_SOLUBILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "CYP3A4-Epoxidation_Sakamoto2013",
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "MoleculeName": "UGT1A4"
+            },
+            {
+              "Name": "CYP2B6-3-Hydroxylation_Pearce2002",
+              "MoleculeName": "CYP2B6"
+            },
+            {
+              "Name": "UGT2B7-N-Glucuronidation_Staines2004",
+              "MoleculeName": "UGT2B7"
+            },
+            {
+              "Name": "Glomerular Filtration-Glomerular Filtration",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "Kanefendt2023_Study1_TreatmentPhase_Carbamazepine",
+            "Formulations": [
+              {
+                "Name": "CBZ_capsuleXR_fasted (Carbatrol)",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 331.0324,
+              "Max": 357.8153,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 8.968496E-06,
+              "Max": 60.41207,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Midazolam-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Kanefendt2023_Study1_TreatmentPhase|Organism|PeripheralVenousBlood|Midazolam|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Carbamazepine-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Kanefendt2023_Study1_TreatmentPhase|Organism|PeripheralVenousBlood|Carbamazepine|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 7
+              }
+            },
+            {
+              "Name": "Kanefendt 2023 - Study 1, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=14)-Carbamazepine-Peripheral Venous Blood-Plasma-GeometricMean",
+              "X": "Kanefendt 2023 - Study 1, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=14)|Time",
+              "Y": "Kanefendt 2023 - Study 1, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=14)|ObservedData|Peripheral Venous Blood|Plasma|Carbamazepine|GeometricMean",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 5,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Kanefendt 2023 - Study 1, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=14)-Midazolam-Peripheral Venous Blood-Plasma-GeometricMean",
+              "X": "Kanefendt 2023 - Study 1, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=14)|Time",
+              "Y": "Kanefendt 2023 - Study 1, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=14)|ObservedData|Peripheral Venous Blood|Plasma|Midazolam|GeometricMean",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 6,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "None",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Carbamazepine-Midazolam-DDI_OSP-GitHub\nKanefendt2023_Study1_TreatmentPhase\n2024-01-15 19:28"
+        }
+      ],
+      "Interactions": [
+        {
+          "Name": "CYP3A4-DMPK",
+          "MoleculeName": "CYP3A4",
+          "CompoundName": "Carbamazepine"
+        },
+        {
+          "Name": "CYP2B6-Faucette2004",
+          "MoleculeName": "CYP2B6",
+          "CompoundName": "Carbamazepine"
+        }
+      ]
+    },
+    {
+      "Name": "Kanefendt2023_Study2_ControlPhase",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Kanefendt 2023 - Study 2, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=13)"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 24.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Kanefendt2023_Study2_ControlPhase_Midazolam|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Midazolam|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Kanefendt2023_Study2_ControlPhase|Organism|PeripheralVenousBlood|Midazolam|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Kanefendt 2023 - Study 2, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=13)"
+        }
+      ],
+      "Individual": "Kanefendt2023_Study2",
+      "Compounds": [
+        {
+          "Name": "Midazolam",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "FaSSIF",
+              "GroupName": "COMPOUND_SOLUBILITY"
+            },
+            {
+              "AlternativeName": "Optimized",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "CYP3A4-Optimized",
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "Name": "UGT1A4-Optimized",
+              "MoleculeName": "UGT1A4"
+            },
+            {
+              "MoleculeName": "CYP2B6"
+            },
+            {
+              "MoleculeName": "UGT2B7"
+            },
+            {
+              "Name": "Glomerular Filtration-Optimized",
+              "SystemicProcessType": "GFR"
+            },
+            {
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "MoleculeName": "UGT1A4"
+            },
+            {
+              "MoleculeName": "CYP2B6"
+            },
+            {
+              "MoleculeName": "UGT2B7"
+            },
+            {
+              "Name": "GABRG2-Buhr 1997",
+              "MoleculeName": "GABRG2"
+            }
+          ],
+          "Protocol": {
+            "Name": "Kanefendt2023_Study2_ControlPhase_Midazolam",
+            "Formulations": [
+              {
+                "Name": "Solution",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Midazolam-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Kanefendt2023_Study2_ControlPhase|Organism|PeripheralVenousBlood|Midazolam|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Kanefendt 2023 - Study 2, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=13)-Midazolam-Peripheral Venous Blood-Plasma-GeometricMean",
+              "X": "Kanefendt 2023 - Study 2, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=13)|Time",
+              "Y": "Kanefendt 2023 - Study 2, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=13)|ObservedData|Peripheral Venous Blood|Plasma|Midazolam|GeometricMean",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Carbamazepine-Midazolam-DDI_OSP-GitHub\nKanefendt2023_Study2_ControlPhase\n2024-01-15 19:30"
+        }
+      ]
+    },
+    {
+      "Name": "Kanefendt2023_Study2_TreatmentPhase",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Kanefendt 2023 - Study 2, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=13)",
+        "Kanefendt 2023 - Study 2, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=13)"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 8.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 336.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 336.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "End time",
+              "Value": 338.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 336.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "End time",
+              "Value": 360.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_11|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_12|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_13|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_14|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_15|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_16|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_17|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_18|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_19|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_20|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_21|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_22|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_23|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_24|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_25|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_26|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_27|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_28|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_29|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_30|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_31|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_32|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_33|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_34|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_35|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_36|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Carbamazepine|CBZ_capsuleXR_fasted (Carbatrol)|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Midazolam|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Midazolam|P (interstitial->intracellular)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Midazolam|P (intracellular->interstitial)",
+          "Value": 0.0019242177595,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Midazolam|Plasma (Peripheral Venous Blood)",
+        "Organism|PeripheralVenousBlood|Carbamazepine|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Kanefendt2023_Study2_TreatmentPhase|Organism|PeripheralVenousBlood|Midazolam|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Kanefendt 2023 - Study 2, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=13)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Kanefendt2023_Study2_TreatmentPhase|Organism|PeripheralVenousBlood|Carbamazepine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Kanefendt 2023 - Study 2, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=13)"
+        }
+      ],
+      "Individual": "Kanefendt2023_Study2",
+      "Compounds": [
+        {
+          "Name": "Midazolam",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "FaSSIF",
+              "GroupName": "COMPOUND_SOLUBILITY"
+            },
+            {
+              "AlternativeName": "Optimized",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "CYP3A4-Optimized",
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "Name": "UGT1A4-Optimized",
+              "MoleculeName": "UGT1A4"
+            },
+            {
+              "MoleculeName": "CYP2B6"
+            },
+            {
+              "MoleculeName": "UGT2B7"
+            },
+            {
+              "Name": "Glomerular Filtration-Optimized",
+              "SystemicProcessType": "GFR"
+            },
+            {
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "MoleculeName": "UGT1A4"
+            },
+            {
+              "MoleculeName": "CYP2B6"
+            },
+            {
+              "MoleculeName": "UGT2B7"
+            },
+            {
+              "Name": "GABRG2-Buhr 1997",
+              "MoleculeName": "GABRG2"
+            }
+          ],
+          "Protocol": {
+            "Name": "Kanefendt2023_Study2_TreatmentPhase_Midazolam",
+            "Formulations": [
+              {
+                "Name": "Solution",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        },
+        {
+          "Name": "Carbamazepine",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "XR tablet (fitted)",
+              "GroupName": "COMPOUND_SOLUBILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "CYP3A4-Epoxidation_Sakamoto2013",
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "MoleculeName": "UGT1A4"
+            },
+            {
+              "Name": "CYP2B6-3-Hydroxylation_Pearce2002",
+              "MoleculeName": "CYP2B6"
+            },
+            {
+              "Name": "UGT2B7-N-Glucuronidation_Staines2004",
+              "MoleculeName": "UGT2B7"
+            },
+            {
+              "Name": "Glomerular Filtration-Glomerular Filtration",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "Kanefendt2023_Study2_TreatmentPhase_Carbamazepine",
+            "Formulations": [
+              {
+                "Name": "CBZ_capsuleXR_fasted (Carbatrol)",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Midazolam-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Kanefendt2023_Study2_TreatmentPhase|Organism|PeripheralVenousBlood|Midazolam|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Carbamazepine-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Kanefendt2023_Study2_TreatmentPhase|Organism|PeripheralVenousBlood|Carbamazepine|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2
+              }
+            },
+            {
+              "Name": "Kanefendt 2023 - Study 2, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=13)-Midazolam-Peripheral Venous Blood-Plasma-GeometricMean",
+              "X": "Kanefendt 2023 - Study 2, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=13)|Time",
+              "Y": "Kanefendt 2023 - Study 2, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=13)|ObservedData|Peripheral Venous Blood|Plasma|Midazolam|GeometricMean",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 5,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Kanefendt 2023 - Study 2, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=13)-Carbamazepine-Peripheral Venous Blood-Plasma-GeometricMean",
+              "X": "Kanefendt 2023 - Study 2, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=13)|Time",
+              "Y": "Kanefendt 2023 - Study 2, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=13)|ObservedData|Peripheral Venous Blood|Plasma|Carbamazepine|GeometricMean",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 7,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "None",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Carbamazepine-Midazolam-DDI_OSP-GitHub\nKanefendt2023_Study2_TreatmentPhase\n2024-01-15 19:32"
+        }
+      ],
+      "Interactions": [
+        {
+          "Name": "CYP3A4-DMPK",
+          "MoleculeName": "CYP3A4",
+          "CompoundName": "Carbamazepine"
+        },
+        {
+          "Name": "CYP2B6-Faucette2004",
+          "MoleculeName": "CYP2B6",
+          "CompoundName": "Carbamazepine"
+        }
+      ]
+    },
     {
       "Name": "Lutz2018_ControlPhase",
       "Model": "4Comp",
@@ -1445,10 +4596,10 @@
               "MoleculeName": "UGT1A4"
             },
             {
-              "MoleculeName": "CYP2B6"
+              "MoleculeName": "UGT2B7"
             },
             {
-              "MoleculeName": "UGT2B7"
+              "MoleculeName": "CYP2B6"
             },
             {
               "Name": "Glomerular Filtration-Optimized",
@@ -1461,14 +4612,14 @@
               "MoleculeName": "UGT1A4"
             },
             {
-              "Name": "GABRG2-Buhr 1997",
-              "MoleculeName": "GABRG2"
+              "MoleculeName": "UGT2B7"
             },
             {
               "MoleculeName": "CYP2B6"
             },
             {
-              "MoleculeName": "UGT2B7"
+              "Name": "GABRG2-Buhr 1997",
+              "MoleculeName": "GABRG2"
             }
           ],
           "Protocol": {
@@ -1521,13 +4672,24 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
           "Settings": {
             "SideMarginsEnabled": true,
             "LegendPosition": "RightInside",
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Carbamazepine-Midazolam-DDI\nLutz2018_ControlPhase\n2022-05-11 11:24"
+          "OriginText": "Carbamazepine-Midazolam-DDI_OSP-GitHub\nLutz2018_ControlPhase\n2024-01-15 19:39"
         }
       ]
     },
@@ -1620,7 +4782,7 @@
             },
             {
               "Name": "End time",
-              "Value": 600.0,
+              "Value": 624.0,
               "Unit": "h",
               "ValueOrigin": {
                 "Source": "Unknown"
@@ -2109,10 +5271,10 @@
               "MoleculeName": "UGT1A4"
             },
             {
-              "MoleculeName": "CYP2B6"
+              "MoleculeName": "UGT2B7"
             },
             {
-              "MoleculeName": "UGT2B7"
+              "MoleculeName": "CYP2B6"
             },
             {
               "Name": "Glomerular Filtration-Optimized",
@@ -2125,14 +5287,14 @@
               "MoleculeName": "UGT1A4"
             },
             {
-              "Name": "GABRG2-Buhr 1997",
-              "MoleculeName": "GABRG2"
+              "MoleculeName": "UGT2B7"
             },
             {
               "MoleculeName": "CYP2B6"
             },
             {
-              "MoleculeName": "UGT2B7"
+              "Name": "GABRG2-Buhr 1997",
+              "MoleculeName": "GABRG2"
             }
           ],
           "Protocol": {
@@ -2166,12 +5328,12 @@
               "MoleculeName": "UGT1A4"
             },
             {
-              "Name": "CYP2B6-3-Hydroxylation_Pearce2002",
-              "MoleculeName": "CYP2B6"
-            },
-            {
               "Name": "UGT2B7-N-Glucuronidation_Staines2004",
               "MoleculeName": "UGT2B7"
+            },
+            {
+              "Name": "CYP2B6-3-Hydroxylation_Pearce2002",
+              "MoleculeName": "CYP2B6"
             },
             {
               "Name": "Glomerular Filtration-Glomerular Filtration",
@@ -2199,6 +5361,8 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
+              "Min": 571.3013,
+              "Max": 638.2303,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
@@ -2210,6 +5374,8 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
+              "Min": 2.093192E-06,
+              "Max": 1.930481,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
@@ -2237,13 +5403,24 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
           "Settings": {
             "SideMarginsEnabled": true,
             "LegendPosition": "RightInside",
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Carbamazepine-Midazolam-DDI\nLutz2018_TreatmentPhase\n2022-05-11 11:28"
+          "OriginText": "Carbamazepine-Midazolam-DDI_OSP-GitHub\nLutz2018_TreatmentPhase\n2024-01-15 19:43"
         }
       ],
       "Interactions": [
@@ -2258,6 +5435,1131 @@
           "CompoundName": "Carbamazepine"
         }
       ]
+    }
+  ],
+  "ObservedData": [
+    {
+      "Name": "Kanefendt 2023 - Study 1, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=14)",
+      "ExtendedProperties": [
+        {
+          "Name": "DB Version",
+          "Value": "OSP DATABASE",
+          "Type": "String"
+        },
+        {
+          "Name": "ID",
+          "Value": 939.0,
+          "Type": "Double"
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Kanefendt 2023",
+          "Type": "String"
+        },
+        {
+          "Name": "Reference",
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/38105467/",
+          "Type": "String"
+        },
+        {
+          "Name": "Source",
+          "Value": "Fig. 1",
+          "Type": "String"
+        },
+        {
+          "Name": "Grouping",
+          "Value": "Study 1, midazolam alone",
+          "Type": "String"
+        },
+        {
+          "Name": "Data type",
+          "Value": "aggregated",
+          "Type": "String"
+        },
+        {
+          "Name": "N",
+          "Value": 14.0,
+          "Type": "Double"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Midazolam",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma",
+          "Type": "String"
+        },
+        {
+          "Name": "Route",
+          "Value": "PO",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "1 mg",
+          "Type": "String"
+        },
+        {
+          "Name": "Times of Administration [h]",
+          "Value": 0.0,
+          "Type": "Double"
+        },
+        {
+          "Name": "Formulation",
+          "Value": ".",
+          "Type": "String"
+        },
+        {
+          "Name": "Food state",
+          "Value": ".",
+          "Type": "String"
+        },
+        {
+          "Name": "Comment",
+          "Value": ".",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Avg",
+          "RelatedColumns": [
+            {
+              "Name": "Var",
+              "QuantityInfo": {
+                "Path": "Kanefendt 2023 - Study 1, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=14)|ObservedData|Peripheral Venous Blood|Plasma|Midazolam|GeometricStdDev"
+              },
+              "DataInfo": {
+                "Origin": "ObservationAuxiliary",
+                "AuxiliaryType": "GeometricStdDev",
+                "MolWeight": 325.77
+              },
+              "Values": [
+                1.56,
+                1.37,
+                1.38,
+                1.41,
+                1.43,
+                1.49,
+                1.52,
+                1.69,
+                1.81,
+                1.91,
+                2.24,
+                2.47,
+                2.82
+              ],
+              "Dimension": "Dimensionless"
+            }
+          ],
+          "QuantityInfo": {
+            "Path": "Kanefendt 2023 - Study 1, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=14)|ObservedData|Peripheral Venous Blood|Plasma|Midazolam|GeometricMean"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 325.77,
+            "LLOQ": 2E-12
+          },
+          "Values": [
+            0.0034232398,
+            0.00389808,
+            0.00353809,
+            0.00257953,
+            0.00194214,
+            0.00146399,
+            0.00104391,
+            0.000653660041,
+            0.0003977,
+            0.00025766,
+            0.00013049,
+            8.193E-05,
+            3.26E-05
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Kanefendt 2023 - Study 1, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=14)|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          0.5,
+          0.75,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          4.0,
+          6.0,
+          8.0,
+          12.0,
+          16.0,
+          24.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Kanefendt 2023 - Study 1, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=14)",
+      "ExtendedProperties": [
+        {
+          "Name": "DB Version",
+          "Value": "OSP DATABASE",
+          "Type": "String"
+        },
+        {
+          "Name": "ID",
+          "Value": 943.0,
+          "Type": "Double"
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Kanefendt 2023",
+          "Type": "String"
+        },
+        {
+          "Name": "Reference",
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/38105467/",
+          "Type": "String"
+        },
+        {
+          "Name": "Source",
+          "Value": "Fig. 1",
+          "Type": "String"
+        },
+        {
+          "Name": "Grouping",
+          "Value": "Study 1, midazolam after pretreatment with carbamazepine",
+          "Type": "String"
+        },
+        {
+          "Name": "Data type",
+          "Value": "aggregated",
+          "Type": "String"
+        },
+        {
+          "Name": "N",
+          "Value": 14.0,
+          "Type": "Double"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Midazolam",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma",
+          "Type": "String"
+        },
+        {
+          "Name": "Route",
+          "Value": "PO",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "1 mg",
+          "Type": "String"
+        },
+        {
+          "Name": "Times of Administration [h]",
+          "Value": 334.0,
+          "Type": "Double"
+        },
+        {
+          "Name": "Formulation",
+          "Value": ".",
+          "Type": "String"
+        },
+        {
+          "Name": "Food state",
+          "Value": ".",
+          "Type": "String"
+        },
+        {
+          "Name": "Comment",
+          "Value": ".",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Avg",
+          "RelatedColumns": [
+            {
+              "Name": "Var",
+              "QuantityInfo": {
+                "Path": "Kanefendt 2023 - Study 1, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=14)|ObservedData|Peripheral Venous Blood|Plasma|Midazolam|GeometricStdDev"
+              },
+              "DataInfo": {
+                "Origin": "ObservationAuxiliary",
+                "AuxiliaryType": "GeometricStdDev",
+                "MolWeight": 325.77
+              },
+              "Values": [
+                1.62,
+                1.58,
+                1.57,
+                1.6,
+                1.64,
+                1.66,
+                1.54,
+                1.54,
+                1.61,
+                1.77,
+                2.61,
+                2.4
+              ],
+              "Dimension": "Dimensionless"
+            }
+          ],
+          "QuantityInfo": {
+            "Path": "Kanefendt 2023 - Study 1, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=14)|ObservedData|Peripheral Venous Blood|Plasma|Midazolam|GeometricMean"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 325.77,
+            "LLOQ": 2E-12
+          },
+          "Values": [
+            0.00171539991,
+            0.0017355,
+            0.00129162008,
+            0.00083669,
+            0.00053744,
+            0.000393239985,
+            0.00028698,
+            0.00016243,
+            6.339E-05,
+            4.48900028E-05,
+            1.96E-05,
+            9.84000053E-06
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Kanefendt 2023 - Study 1, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=14)|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          334.5,
+          334.75,
+          335.0,
+          335.5,
+          336.0,
+          336.5,
+          337.0,
+          338.0,
+          340.0,
+          342.0,
+          346.0,
+          350.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Kanefendt 2023 - Study 1, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=14)",
+      "ExtendedProperties": [
+        {
+          "Name": "DB Version",
+          "Value": "OSP DATABASE",
+          "Type": "String"
+        },
+        {
+          "Name": "ID",
+          "Value": 1131.0,
+          "Type": "Double"
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Kanefendt 2023",
+          "Type": "String"
+        },
+        {
+          "Name": "Reference",
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/38105467/",
+          "Type": "String"
+        },
+        {
+          "Name": "Source",
+          "Value": "Fig. S4",
+          "Type": "String"
+        },
+        {
+          "Name": "Grouping",
+          "Value": "Study 1, carbamazepine",
+          "Type": "String"
+        },
+        {
+          "Name": "Data type",
+          "Value": "aggregated",
+          "Type": "String"
+        },
+        {
+          "Name": "N",
+          "Value": 14.0,
+          "Type": "Double"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Carbamazepine",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma",
+          "Type": "String"
+        },
+        {
+          "Name": "Route",
+          "Value": "PO",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "100, 200, 300 mg",
+          "Type": "String"
+        },
+        {
+          "Name": "Times of Administration [h]",
+          "Value": "100 mg: S0-T12-R4; 200 mg: S48-T12-R4; 300 mg: S96-T12-R20, 338, 348, 364, S372-T12-R11",
+          "Type": "String"
+        },
+        {
+          "Name": "Formulation",
+          "Value": ".",
+          "Type": "String"
+        },
+        {
+          "Name": "Food state",
+          "Value": ".",
+          "Type": "String"
+        },
+        {
+          "Name": "Comment",
+          "Value": ".",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Avg",
+          "RelatedColumns": [
+            {
+              "Name": "Var",
+              "QuantityInfo": {
+                "Path": "Kanefendt 2023 - Study 1, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=14)|ObservedData|Peripheral Venous Blood|Plasma|Carbamazepine|GeometricStdDev"
+              },
+              "DataInfo": {
+                "Origin": "ObservationAuxiliary",
+                "AuxiliaryType": "GeometricStdDev",
+                "MolWeight": 236.269
+              },
+              "Values": [
+                1.48088932,
+                1.53336942,
+                1.50508952,
+                1.48954725,
+                1.512356,
+                1.42904258,
+                1.41039073,
+                1.42781663,
+                1.42101789,
+                1.40831113,
+                1.35542727,
+                1.42385757,
+                1.36934912,
+                1.46343386,
+                1.4029243,
+                1.56643844,
+                1.52718711
+              ],
+              "Dimension": "Dimensionless"
+            }
+          ],
+          "QuantityInfo": {
+            "Path": "Kanefendt 2023 - Study 1, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=14)|ObservedData|Peripheral Venous Blood|Plasma|Carbamazepine|GeometricMean"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 236.269
+          },
+          "Values": [
+            6.886718,
+            6.75050735,
+            7.210675,
+            6.996533,
+            6.88012362,
+            7.382929,
+            6.85556555,
+            6.7084,
+            6.76664543,
+            7.67595339,
+            7.76644373,
+            7.04138,
+            6.49889851,
+            6.227648,
+            6.261755,
+            6.10271072,
+            3.66727114
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Kanefendt 2023 - Study 1, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=14)|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          334.0,
+          338.0,
+          340.0,
+          342.0,
+          346.0,
+          358.0,
+          361.0,
+          364.0,
+          366.0,
+          370.0,
+          382.0,
+          406.0,
+          430.0,
+          454.0,
+          478.0,
+          502.0,
+          526.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Kanefendt 2023 - Study 2, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=13)",
+      "ExtendedProperties": [
+        {
+          "Name": "DB Version",
+          "Value": "OSP DATABASE",
+          "Type": "String"
+        },
+        {
+          "Name": "ID",
+          "Value": 1132.0,
+          "Type": "Double"
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Kanefendt 2023",
+          "Type": "String"
+        },
+        {
+          "Name": "Reference",
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/38105467/",
+          "Type": "String"
+        },
+        {
+          "Name": "Source",
+          "Value": "Fig. 1",
+          "Type": "String"
+        },
+        {
+          "Name": "Grouping",
+          "Value": "Study 2, midazolam alone",
+          "Type": "String"
+        },
+        {
+          "Name": "Data type",
+          "Value": "aggregated",
+          "Type": "String"
+        },
+        {
+          "Name": "N",
+          "Value": 13.0,
+          "Type": "Double"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Midazolam",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma",
+          "Type": "String"
+        },
+        {
+          "Name": "Route",
+          "Value": "PO",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "1 mg",
+          "Type": "String"
+        },
+        {
+          "Name": "Times of Administration [h]",
+          "Value": 0.0,
+          "Type": "Double"
+        },
+        {
+          "Name": "Formulation",
+          "Value": ".",
+          "Type": "String"
+        },
+        {
+          "Name": "Food state",
+          "Value": ".",
+          "Type": "String"
+        },
+        {
+          "Name": "Comment",
+          "Value": ".",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Avg",
+          "RelatedColumns": [
+            {
+              "Name": "Var",
+              "QuantityInfo": {
+                "Path": "Kanefendt 2023 - Study 2, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=13)|ObservedData|Peripheral Venous Blood|Plasma|Midazolam|GeometricStdDev"
+              },
+              "DataInfo": {
+                "Origin": "ObservationAuxiliary",
+                "AuxiliaryType": "GeometricStdDev",
+                "MolWeight": 325.77
+              },
+              "Values": [
+                1.66,
+                1.37,
+                1.27,
+                1.39,
+                1.35,
+                1.35,
+                1.37,
+                1.4,
+                1.55,
+                1.63,
+                1.76,
+                1.84,
+                2.33
+              ],
+              "Dimension": "Dimensionless"
+            }
+          ],
+          "QuantityInfo": {
+            "Path": "Kanefendt 2023 - Study 2, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=13)|ObservedData|Peripheral Venous Blood|Plasma|Midazolam|GeometricMean"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 325.77,
+            "LLOQ": 2E-12
+          },
+          "Values": [
+            0.00172360649,
+            0.00363654015,
+            0.0035774156,
+            0.00301545579,
+            0.00210201927,
+            0.001570063,
+            0.00106656412,
+            0.0007908671,
+            0.0003583846,
+            0.0002442835,
+            0.0001353177,
+            7.97783E-05,
+            2.45826E-05
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Kanefendt 2023 - Study 2, midazolam alone - Midazolam - PO - 1 mg - Plasma - agg. (n=13)|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          1.5,
+          2.0,
+          3.0,
+          4.0,
+          6.0,
+          8.0,
+          12.0,
+          15.0,
+          23.5
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Kanefendt 2023 - Study 2, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=13)",
+      "ExtendedProperties": [
+        {
+          "Name": "DB Version",
+          "Value": "OSP DATABASE",
+          "Type": "String"
+        },
+        {
+          "Name": "ID",
+          "Value": 1133.0,
+          "Type": "Double"
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Kanefendt 2023",
+          "Type": "String"
+        },
+        {
+          "Name": "Reference",
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/38105467/",
+          "Type": "String"
+        },
+        {
+          "Name": "Source",
+          "Value": "Fig. 1",
+          "Type": "String"
+        },
+        {
+          "Name": "Grouping",
+          "Value": "Study 2, midazolam after pretreatment with carbamazepine",
+          "Type": "String"
+        },
+        {
+          "Name": "Data type",
+          "Value": "aggregated",
+          "Type": "String"
+        },
+        {
+          "Name": "N",
+          "Value": 13.0,
+          "Type": "Double"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Midazolam",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma",
+          "Type": "String"
+        },
+        {
+          "Name": "Route",
+          "Value": "PO",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "1 mg",
+          "Type": "String"
+        },
+        {
+          "Name": "Times of Administration [h]",
+          "Value": 336.0,
+          "Type": "Double"
+        },
+        {
+          "Name": "Formulation",
+          "Value": ".",
+          "Type": "String"
+        },
+        {
+          "Name": "Food state",
+          "Value": ".",
+          "Type": "String"
+        },
+        {
+          "Name": "Comment",
+          "Value": ".",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Avg",
+          "RelatedColumns": [
+            {
+              "Name": "Var",
+              "QuantityInfo": {
+                "Path": "Kanefendt 2023 - Study 2, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=13)|ObservedData|Peripheral Venous Blood|Plasma|Midazolam|GeometricStdDev"
+              },
+              "DataInfo": {
+                "Origin": "ObservationAuxiliary",
+                "AuxiliaryType": "GeometricStdDev",
+                "MolWeight": 325.77
+              },
+              "Values": [
+                1.59,
+                1.46,
+                1.3,
+                1.34,
+                1.42,
+                1.47,
+                1.44,
+                1.48,
+                1.53,
+                1.62,
+                1.88,
+                1.95,
+                2.51
+              ],
+              "Dimension": "Dimensionless"
+            }
+          ],
+          "QuantityInfo": {
+            "Path": "Kanefendt 2023 - Study 2, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=13)|ObservedData|Peripheral Venous Blood|Plasma|Midazolam|GeometricMean"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 325.77,
+            "LLOQ": 2E-12
+          },
+          "Values": [
+            0.00126270554,
+            0.00173795572,
+            0.00142780959,
+            0.001104368,
+            0.0007579922,
+            0.0005486981,
+            0.000304500485,
+            0.000199948408,
+            7.3142E-05,
+            4.68575963E-05,
+            2.49025E-05,
+            1.49366006E-05,
+            4.4612E-06
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Kanefendt 2023 - Study 2, midazolam after pretreatment with carbamazepine - Midazolam - PO - 1 mg - Plasma - agg. (n=13)|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          336.25,
+          336.5,
+          336.75,
+          337.0,
+          337.5,
+          338.0,
+          339.0,
+          340.0,
+          342.0,
+          344.0,
+          348.0,
+          351.0,
+          359.5
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Kanefendt 2023 - Study 2, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=13)",
+      "ExtendedProperties": [
+        {
+          "Name": "DB Version",
+          "Value": "OSP DATABASE",
+          "Type": "String"
+        },
+        {
+          "Name": "ID",
+          "Value": 1462.0,
+          "Type": "Double"
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Kanefendt 2023",
+          "Type": "String"
+        },
+        {
+          "Name": "Reference",
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/38105467/",
+          "Type": "String"
+        },
+        {
+          "Name": "Source",
+          "Value": "Fig. S4",
+          "Type": "String"
+        },
+        {
+          "Name": "Grouping",
+          "Value": "Study 2, carbamazepine",
+          "Type": "String"
+        },
+        {
+          "Name": "Data type",
+          "Value": "aggregated",
+          "Type": "String"
+        },
+        {
+          "Name": "N",
+          "Value": 13.0,
+          "Type": "Double"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Carbamazepine",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma",
+          "Type": "String"
+        },
+        {
+          "Name": "Route",
+          "Value": "PO",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "100, 200, 300 mg",
+          "Type": "String"
+        },
+        {
+          "Name": "Times of Administration [h]",
+          "Value": "100 mg: S0-T12-R4; 200 mg: S48-T12-R4; 300 mg: S96-T12-R20, 340, 348, 364, S372-T12-R3",
+          "Type": "String"
+        },
+        {
+          "Name": "Formulation",
+          "Value": ".",
+          "Type": "String"
+        },
+        {
+          "Name": "Food state",
+          "Value": ".",
+          "Type": "String"
+        },
+        {
+          "Name": "Comment",
+          "Value": ".",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Avg",
+          "RelatedColumns": [
+            {
+              "Name": "Var",
+              "QuantityInfo": {
+                "Path": "Kanefendt 2023 - Study 2, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=13)|ObservedData|Peripheral Venous Blood|Plasma|Carbamazepine|GeometricStdDev"
+              },
+              "DataInfo": {
+                "Origin": "ObservationAuxiliary",
+                "AuxiliaryType": "GeometricStdDev",
+                "MolWeight": 236.269
+              },
+              "Values": [
+                1.26,
+                1.21,
+                1.19,
+                1.13,
+                1.19,
+                1.3,
+                1.26,
+                1.28,
+                1.24,
+                1.26,
+                1.27,
+                1.23,
+                1.3,
+                1.28,
+                1.22,
+                1.23,
+                1.29,
+                1.28,
+                1.46
+              ],
+              "Dimension": "Dimensionless"
+            }
+          ],
+          "QuantityInfo": {
+            "Path": "Kanefendt 2023 - Study 2, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=13)|ObservedData|Peripheral Venous Blood|Plasma|Carbamazepine|GeometricMean"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 236.269
+          },
+          "Values": [
+            0.43772,
+            0.57043004,
+            0.603170037,
+            2.41320014,
+            5.58645,
+            7.21821,
+            6.13222027,
+            5.70455,
+            6.18537045,
+            6.7898,
+            6.31696,
+            6.45143032,
+            5.7452,
+            6.21889,
+            6.63204,
+            6.36335039,
+            5.97709,
+            5.95522,
+            3.43087
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Kanefendt 2023 - Study 2, carbamazepine - Carbamazepine - PO - 100, 200, 300 mg - Plasma - agg. (n=13)|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          4.0,
+          8.0,
+          12.0,
+          48.0,
+          96.0,
+          192.0,
+          336.0,
+          340.0,
+          342.0,
+          344.0,
+          348.0,
+          360.0,
+          364.0,
+          366.0,
+          368.0,
+          372.0,
+          420.0,
+          432.0,
+          456.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
     }
   ]
 }
