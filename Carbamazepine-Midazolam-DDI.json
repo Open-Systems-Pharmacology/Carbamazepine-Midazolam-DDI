@@ -1013,7 +1013,7 @@
   ],
   "Formulations": [
     {
-      "Name": "Solution",
+      "Name": "Oral solution",
       "FormulationType": "Formulation_Dissolved"
     },
     {
@@ -2195,7 +2195,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|Kanefendt2023_Study1_ControlPhase_Midazolam|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Applications|Kanefendt2023_Study1_ControlPhase_Midazolam|Oral solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -2444,7 +2444,7 @@
             "Name": "Kanefendt2023_Study1_ControlPhase_Midazolam",
             "Formulations": [
               {
-                "Name": "Solution",
+                "Name": "Oral solution",
                 "Key": "Formulation"
               }
             ]
@@ -2841,7 +2841,7 @@
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Midazolam|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Applications|Kanefendt2023_Study1_TreatmentPhase_Midazolam|Oral solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -3096,7 +3096,7 @@
             "Name": "Kanefendt2023_Study1_TreatmentPhase_Midazolam",
             "Formulations": [
               {
-                "Name": "Solution",
+                "Name": "Oral solution",
                 "Key": "Formulation"
               }
             ]
@@ -3308,7 +3308,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|Kanefendt2023_Study2_ControlPhase_Midazolam|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Applications|Kanefendt2023_Study2_ControlPhase_Midazolam|Oral solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -3557,7 +3557,7 @@
             "Name": "Kanefendt2023_Study2_ControlPhase_Midazolam",
             "Formulations": [
               {
-                "Name": "Solution",
+                "Name": "Oral solution",
                 "Key": "Formulation"
               }
             ]
@@ -3924,7 +3924,7 @@
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Midazolam|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Applications|Kanefendt2023_Study2_TreatmentPhase_Midazolam|Oral solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -4179,7 +4179,7 @@
             "Name": "Kanefendt2023_Study2_TreatmentPhase_Midazolam",
             "Formulations": [
               {
-                "Name": "Solution",
+                "Name": "Oral solution",
                 "Key": "Formulation"
               }
             ]
@@ -4384,7 +4384,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|Lutz2018_ControlPhase_Midazolam|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Applications|Lutz2018_ControlPhase_Midazolam|Oral solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -4626,7 +4626,7 @@
             "Name": "Lutz2018_ControlPhase_Midazolam",
             "Formulations": [
               {
-                "Name": "Solution",
+                "Name": "Oral solution",
                 "Key": "Formulation"
               }
             ]
@@ -5058,7 +5058,7 @@
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|Lutz2018_TreatmentPhase_Midazolam|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Applications|Lutz2018_TreatmentPhase_Midazolam|Oral solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -5301,7 +5301,7 @@
             "Name": "Lutz2018_TreatmentPhase_Midazolam",
             "Formulations": [
               {
-                "Name": "Solution",
+                "Name": "Oral solution",
                 "Key": "Formulation"
               }
             ]
